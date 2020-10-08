@@ -5,7 +5,7 @@ import 'package:flutter_app/models/index.dart';
 import 'package:http/http.dart';
 
 class ApiService {
-  final String baseUrl = "http://192.168.42.225:80/apiservice/c_user";
+  final String baseUrl = "http://192.168.0.108:80/apiservice/c_user";
   Client client = Client();
 
   Future<Customrespon> resgister(Map<String,dynamic> map) async {

@@ -77,6 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           _scaffoldState.currentState.showSnackBar(SnackBar(
                             content: Text("Login Sukses"),
                           ));
+                          removeValuesSF();
                           addStringToSF("username",data.data.username);
                           addStringToSF("login_state",data.data.login_state);
                           Navigator.push(

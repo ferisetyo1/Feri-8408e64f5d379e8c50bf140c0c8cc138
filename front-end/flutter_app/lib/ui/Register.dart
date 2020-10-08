@@ -87,6 +87,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       _apiService.login(map).then((data) {
                         setState(() => _isLoading = false);
                         if (data != null) {
+                          removeValuesSF();
                           addStringToSF("username",data.data.username);
                           addStringToSF("login_state",data.data.login_state);
                           _scaffoldState.currentState.showSnackBar(SnackBar(
